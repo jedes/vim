@@ -158,3 +158,8 @@ set shortmess+=I
 " => Other mode settings
 """"""""""""""""""""""""""""""""
 set guioptions-=T
+
+
+"""""""""""""""""""""""""""""""""""""
+" => Higlight cursor on current line
+"""""""""""""""""""""""""""""""""""""

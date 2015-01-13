@@ -110,15 +110,14 @@ set background=dark
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Use spaces instead of tabs
-set expandtab
-
 " Be smart when using tabs ;)
 set smarttab
 
-" 1 tab == 4 spaces
+" 1 tab == 4 spaces and we use real tabs...
 set shiftwidth=4
 set tabstop=4
+set softtabstop=4
+set noexpandtab
 
 " Linebreak on 500 characters
 set lbr

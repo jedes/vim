@@ -158,3 +158,8 @@ set shortmess+=I
 " => Other mode settings
 """"""""""""""""""""""""""""""""
 set guioptions-=T
+
+""""""""""""""""""""""""""""""""
+" => Highlight the current line
+""""""""""""""""""""""""""""""""
+set cursorline

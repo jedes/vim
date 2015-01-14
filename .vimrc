@@ -205,3 +205,5 @@ filetype plugin indent on    " required
 " Enable the list of buffers
 let g:airline#extensions#tabline#enabled = 1
 
+" Show buffer numbers
+let g:airline#extensions#tabline#buffer_nr_show = 1

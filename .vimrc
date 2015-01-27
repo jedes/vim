@@ -208,3 +208,10 @@ let g:airline#extensions#tabline#enabled = 1
 
 " Show buffer numbers
 let g:airline#extensions#tabline#buffer_nr_show = 1
+
+"""""""""""""""""""""""""""""""""""""""""
+" => Ctrl-tab behavior to switch buffers
+"""""""""""""""""""""""""""""""""""""""""
+" Add keyboard shortcuts
+map <C-Tab> :bn<CR>
+map <C-S-Tab> :bp<CR>

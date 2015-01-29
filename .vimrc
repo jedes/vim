@@ -182,6 +182,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'Align'
 Plugin 'bling/vim-airline'
 Plugin 'kien/ctrlp.vim'
+Plugin 'OmniCppComplete'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -215,3 +216,24 @@ let g:airline#extensions#tabline#buffer_nr_show = 1
 " Add keyboard shortcuts
 map <C-Tab> :bn<CR>
 map <C-S-Tab> :bp<CR>
+
+
+"""""""""""""""""""""""""""""""""""""""""
+" => OmniCppComplete stuff
+"""""""""""""""""""""""""""""""""""""""""
+" to rebuild ctags...
+map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+
+" OmniCppComplete
+let OmniCpp_NamespaceSearch = 1
+let OmniCpp_GlobalScopeSearch = 1
+let OmniCpp_ShowAccess = 1
+let OmniCpp_ShowPrototypeInAbbr = 1 " show function parameters
+let OmniCpp_MayCompleteDot = 1 " autocomplete after .
+let OmniCpp_MayCompleteArrow = 1 " autocomplete after ->
+let OmniCpp_MayCompleteScope = 1 " autocomplete after ::
+let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
+" automatically open and close the popup menu / preview window
+au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
+set completeopt=menuone,menu,longest,preview
+

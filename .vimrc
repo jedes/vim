@@ -181,7 +181,7 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'Align'
 Plugin 'bling/vim-airline'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'OmniCppComplete'
 Plugin 'tpope/vim-abolish'
 Plugin 'terryma/vim-multiple-cursors'
@@ -238,4 +238,9 @@ let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
 " automatically open and close the popup menu / preview window
 au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
 set completeopt=menuone,menu,longest,preview
+
+"""""""""""""""""""""""""""""""""""""""""
+" => Ctrl-P configuration
+"""""""""""""""""""""""""""""""""""""""""
+let g:ctrlp_working_path_mode = 'wa'
 

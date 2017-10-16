@@ -185,6 +185,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'OmniCppComplete'
 Plugin 'tpope/vim-abolish'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'nachumk/systemverilog.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

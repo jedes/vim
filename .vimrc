@@ -265,3 +265,8 @@ let NERDTreeMinimalUI=1
 map <F2> :NERDTreeToggle<CR>
 
 
+
+"""""""""""""""""""""""""""""""""""""""""
+" => Maximize the vim window
+"""""""""""""""""""""""""""""""""""""""""
+autocmd GUIEnter * simalt ~x	" Works on windows, harmless on X.

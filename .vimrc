@@ -6,10 +6,11 @@ set nocompatible
 set backspace=indent,eol,start
 
 set backup		" keep a backup file
-set history=50		" keep 50 lines of command line history
+set history=500		" keep 500 lines of command line history
 set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
+set hlsearch		" Highlight all search matches
 
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')

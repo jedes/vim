@@ -171,6 +171,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'python-mode/python-mode'
 Plugin 'martinda/Jenkinsfile-vim-syntax'
+Plugin 'maxbrunsfeld/vim-yankstack'
+Plugin 'terryma/vim-expand-region'
 Plugin 'editorconfig/editorconfig-vim'
 
 " All of your Plugins must be added before the following line
